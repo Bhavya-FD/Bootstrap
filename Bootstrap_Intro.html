@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Introduction</title>
+    <!-- FontAwesome CDN is here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap CSS CDN link is here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <style>
+        img{
+            height: 580px;
+            border: 5px ridge black;
+        }
+        div[class*=column]{
+            border: 2px solid black;
+            padding: 70px;
+            margin: 20px 0px;
+        }
+        .col-6{
+            background: teal;
+            color: khaki;
+        }
+        .col-4{
+            background: crimson;
+            color: aliceblue;
+        }
+        .col-3{
+            background: yellowgreen;
+            color: brown;
+        }
+        .form{
+            background: tan;
+            padding: 20px;
+        }
+        label{
+            color: rgb(34, 6, 147);
+            font-size: 20px;
+        }
+    </style>
+</head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa-brands fa-google"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Branch
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Ahmdabad</a></li>
+                  <li><a class="dropdown-item" href="#">Rajkot</a></li>
+                  <li><a class="dropdown-item" href="#">Surat</a></li>
+                  <li><a class="dropdown-item" href="#">Vadodara</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Search more..</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Slider -->
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+              <img src="../CSS/Images/painting-mountain-lake-with-mountain-background.jpg" class="d-block w-100" alt="...">
+            </div>
+          <div class="carousel-item">
+              <img src="../CSS/Images/cascade-boat-clean-china-natural-rural.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../CSS/Images/road-in-amazing-summer-mountains-picjumbo-com.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../CSS/Images/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Grid Col -->
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-6 column">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, perferendis!</span>
+          </div>
+          <div class="col-6 column">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, perferendis!</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 column">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, perferendis!</span>
+          </div>
+          <div class="col-4 column">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, perferendis!</span>
+          </div>
+          <div class="col-4 column">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, perferendis!</span>
+          </div>
+          <div class="col-3 column">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, perferendis!</span>
+          </div>
+          <div class="col-3 column">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, perferendis!</span>
+          </div>
+          <div class="col-3 column">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, perferendis!</span>
+          </div>
+          <div class="col-3 column">
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, perferendis!</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordian -->
+      <h1 class="text-center">FAQ's</h1>
+      <div class="container">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              1. Question-1 is here?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus illum dolor totam. Accusamus, beatae? Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, omnis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, eveniet.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+               2. Question-2 is here?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus illum dolor totam. Accusamus, beatae?</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+               3. Question-3 is here?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto delectus illum dolor totam. Accusamus, beatae? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, ipsa.</div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <br><br>
+
+
+      <!-- Form -->
+      <div class="container">
+      <form class="row g-3 form">
+        <div class="col-md-4">
+          <label for="validationDefault01" class="form-label">First name :</label>
+          <input type="text" class="form-control" id="validationDefault01" value="" placeholder="First name" required>
+        </div>
+        <div class="col-md-4">
+          <label for="validationDefault02" class="form-label">Last name :</label>
+          <input type="text" class="form-control" id="validationDefault02" value="" placeholder="last name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="validationDefault03" class="form-label">City :</label>
+          <input type="text" class="form-control" id="validationDefault03" required>
+        </div>
+        <div class="col-md-3">
+          <label for="validationDefault04" class="form-label">State :</label>
+          <select class="form-select" id="validationDefault04" required>
+            <option>Ahemdabad</option>
+            <option>Surat</option>
+            <option>Rajkot</option>
+            <option>Vadodara</option>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Agree to terms and conditions
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary" type="submit">Submit form</button>
+        </div>
+      </form>
+      </div>
+
+      <br><br>
+
+    
+    
+    
+      <!-- bootstrap CSS JS script is here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
