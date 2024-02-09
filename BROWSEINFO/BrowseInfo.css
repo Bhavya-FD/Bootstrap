@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar starts here */
+nav{
+    border: 1px solid black;
+    font-size: 20px;
+}
+.nav-item ul{
+  background: black;
+  padding: 15px 0px;
+  box-shadow: 0px 0px 10px black;
+}
+.dropdown-menu a{
+  color: aliceblue;
+}
+.navbar-brand img{
+    width: 90%;
+    height: 55px;
+}
+.service{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+/* Slider starts here */
+.carousel {
+    height:88vh;
+}    
+.carousel-inner > .item > img {   
+    height: 88vh;    
+    object-fit:cover;  
+    position: relative;  
+}
+.heading{
+    position: absolute;
+    z-index: 2;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+    left: 350px;
+}
+.one{
+    top: 120px;
+    left: 380px;
+}
+.two{
+    top: 180px;
+}
+.three{
+    top: 140px;
+}
+.four{
+    top: 100px;
+}
