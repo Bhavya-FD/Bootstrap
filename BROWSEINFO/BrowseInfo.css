@@ -57,3 +57,25 @@ nav{
 .four{
     top: 100px;
 }
+.development{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.scale-up-center {
+    animation-name: scale-up-center;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+  @keyframes scale-up-center {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+  }
+  
+  /* animation-name: o_anim_zoom_in; visibility: visible; animation-play-state: running; */
